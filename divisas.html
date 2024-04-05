@@ -17,6 +17,7 @@
         <div class="input-container" >
           <label for="from">De:</label>
             <select id="from">
+                <option>Seleccione Divisa</option>
                 <option value="usd" id="SeleccionarDivisaAconvertir" class="SeleccionarDivisaAconvertir">USD</option>
                 <option value="eur" id="SeleccionarDivisaAconvertir" class="SeleccionarDivisaAconvertir">EUR</option>
                 <option value="lps" id="SeleccionarDivisaAconvertir" class="SeleccionarDivisaAconvertir">LPS</option>
@@ -26,14 +27,19 @@
         <div class="input-container">
             <label for="to">A:</label>
             <select id="to">
+                <option>Seleccione Divisa</option>
                 <option value="usd" >USD</option>
                 <option value="eur">EUR</option>
                 <option value="lps">LPS</option>
             </select>
         </div>
 
-        <button id="convert-btn" onclick="">Convertir</button>
-        <div id="result-container"></div>
+        <button id="convert-btn" onclick="convertirDivisa()">Convertir</button>
+        <br><br>
+        <label for="result">El Resultado es: </label>
+        <div id="result-container">
+            
+        </div>
     </div>
     <script src="./js/divisas.js"></script>
 </body>
